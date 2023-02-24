@@ -10,6 +10,7 @@ import MarketPage from './Pages/MarketPage';
 import MintPage from './Pages/MintPage';
 import TxPage from './Pages/TxPage';
 import { useEffect, useRef, useState } from 'react';
+import RankPage from './Pages/RankPage';
 
 type Price = {
   currentPrice: number,
@@ -72,6 +73,7 @@ function App() {
           <Route path='/' element={<MainPage rtd={rtd} addRtd={addRtd}/>}/>
           <Route path='/market' element={<MarketPage/>}/>
           <Route path='/mint' element={<MintPage/>}/>
+          <Route path='/rank' element={<RankPage/>}/>
           <Route path='/tx' element={<TxPage/>}/>
         </Routes>
       </BrowserRouter>
