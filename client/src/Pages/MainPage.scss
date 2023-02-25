@@ -11,14 +11,27 @@
 
     }
     .header{
+        display: flex;
         margin: 0 0 5px 0;
+        padding: 0 2%;
         height: 50px;
         color: white;
         background-color: #005469;
         h1{
             margin: 0%;
             background-color: #20202000;
-    
+        }
+        .main_name{
+            position: absolute;
+            top: 5px;
+
+        }
+        .user_state{
+            width: 200px;
+            display: flex;
+            a{
+                margin: 0 1%;
+            }
         }
     
     }
@@ -150,6 +163,51 @@
         }
     }
 }
+.App{
+        align-items: center;
+
+}
+.log_in_page,.sign_up_page{
+    margin: 5px auto;
+    width: 300px;
+    background-color: #101010;
+    padding: 20% 2% 50% 2%;
+    .log_in_page_head, .sign_up_page_head{
+        margin: 5%;
+    }
+    h3{
+        margin: 2%;
+    }
+    .log_in_page_body_input, .sign_up_page_body_input{
+        display: flex;
+        margin: 1% 10%;
+        align-items: center;
+        input{
+            height: 25px;
+            width: 70%;
+            border-radius: 10px;
+            border: 1px solid #005469;
+        }
+        h5{
+            margin: 0;
+            text-align: left;
+        }
+    }
+    button{
+        margin: 2%;
+        width: 80%;
+        height: 40px;
+        border-radius: 10px;
+        border: 0;
+        background-color: #005469;
+
+        h3{
+            margin: auto;
+            color: white;
+        }
+    }
+}
+
 @media (max-width:768px){
     .main_top{
         display: block;
