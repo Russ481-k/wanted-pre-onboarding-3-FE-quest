@@ -11,6 +11,8 @@ import MintPage from './Pages/MintPage';
 import TxPage from './Pages/TxPage';
 import { useEffect, useRef, useState } from 'react';
 import RankPage from './Pages/RankPage';
+import LogInPage from './Pages/LogInPage';
+import SignUpPage from './Pages/SignUpPage';
 
 type Price = {
   currentPrice: number,
@@ -75,6 +77,8 @@ function App() {
           <Route path='/mint' element={<MintPage/>}/>
           <Route path='/rank' element={<RankPage/>}/>
           <Route path='/tx' element={<TxPage/>}/>
+          <Route path='/sign_up' element={<SignUpPage/>}/>
+          <Route path='/log_in' element={<LogInPage/>}/>
         </Routes>
       </BrowserRouter>
     </div>
